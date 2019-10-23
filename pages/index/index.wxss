@@ -1,0 +1,166 @@
+.containers{
+ 
+}
+
+.content {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bg {
+  width: 750rpx;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.location {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px;
+}
+.location:hover {
+  color: #ddd;
+}
+.box {
+  margin: 20px auto 0;
+  color: #fff;
+
+ text-align: center;
+}
+.box .img_icon {
+  width: 30px;
+  height: 30px;
+}
+.cen {
+  font-size: 40px;
+  border-bottom: 1px solid #ddd;
+}
+.city {
+  text-align: center;
+  line-height: 90px;
+  font-size: 40rpx;
+  color: white;
+}
+.today {
+  width: 750rpx;
+  height: 300px;
+}
+.status {
+  margin-top: 5px;
+}
+.other {
+  clear: both;
+  width: 750rpx;
+  height: 150px;
+}
+.remind-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20%;
+}
+.remind-img {
+  width:658rpx;
+  height: 493rpx;
+  padding-bottom: 50rpx;
+}
+.other_day {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+  color: #2F4056;
+}
+.other_day:last-child {
+  border: none;
+}
+.weather_icon {
+  width: 35px;
+  height: 35px;
+}
+.day_title {
+  color: rgba(0,0,0,.7);
+  flex: 1
+}
+.weather_status {
+  /* background-color: #8fc31f;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 13px; */
+  padding-left: 10rpx;
+}
+.address{
+  color: white;
+ 
+}
+.current{
+  width: 100%;
+  height: auto;
+  background: white;
+  display: flex; 
+   justify-content: space-around  
+}
+
+.tmp{
+  text-align: center;
+}
+.current_content{
+  margin:10px;
+ display: flex;
+ flex-direction: column;
+ align-items:center;
+}
+.content_text{
+  padding: 3px 0;
+}
+.current_img{
+  width: 30px;
+  height: 30px;
+}
+.yu{
+    display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+    flex: 1
+}
+.classname{
+  flex: 2
+}
+.lifestyle_icon{
+  width: 50px;
+  height: 50px;
+  margin:0 auto;
+}
+.lifestyle_item{
+  padding: 3%;
+  text-align:center;
+  width:15%;
+}
+.tpye{
+  display: flex;
+  flex-direction: column;
+}
+.lifestyle{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.lifestyle_tex{
+  color: gray;
+  font-size: 12px;
+  padding-top: 10rpx;
+}
+.brf{
+  text-align:center;
+  padding: 10rpx 0;
+}

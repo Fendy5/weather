@@ -1,0 +1,28 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.border{
+ border-left-width: 5px;
+ border-left-style: solid;
+ border-color: #FF7F24;
+ border-right-width: 5px;
+  border-right-style: solid;
+  padding: 5px;
+  height: 10px;
+  background: #f4f4f4
+}
+.footer{
+  text-align: center;
+   background: #f4f4f4;
+   font-size: 12px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+

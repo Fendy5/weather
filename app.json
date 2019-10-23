@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于查询天气信息"
+    }
+  },
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF7F24",
+    "navigationBarTitleText": "秋霁天气",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FF7F24"
+  },
+  "sitemapLocation": "sitemap.json"
+}

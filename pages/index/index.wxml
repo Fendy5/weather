@@ -1,0 +1,78 @@
+   <view class="containers">
+ <view class="remind-box" wx:if="{{remind}}">
+    <image class="remind-img" src="../../images/loading2.gif"></image>
+    <text>正在玩命预测天气</text>
+    <text>\n</text>
+    <text>请稍等……</text>
+  </view>
+  <block wx:else>
+<view class="content">
+  <!-- 上面的区域 -->
+  <view class="today">
+    <image class="bg" src="../../images/cloud.gif" mode="aspectFill"></image>
+    <view class="location" bindtap="changeMap">
+      <view class="address">{{city}}</view>
+    </view>
+    <view class="city">{{street}}</view>
+    <view class="box">
+      <text class="cen">{{now.fl}}℃</text>
+      <view class="status">
+         <image class="weather_icon" src="../../asset/images/icon/{{now.cond_code}}.png" mode="scaleToFill"></image>{{now.cond_txt}}
+      </view>
+    </view>
+  </view>
+  <!-- 往后的天气 -->
+  <view class='border'></view>
+<swiper style='  display: block;height: 180px;'  indicator-dots="true" indicator-active-color="#73b4ef">
+<swiper-item class='current'   wx:for="{{list}}"  wx:key="id"  >
+ <block wx:for="{{item}}" wx:key="id">
+<view  class='current_content'  >
+<view class='content_text'>{{item[0]}}</view>
+<image class='current_img' src='../../asset/images/icon/{{item[3]}}.png'></image>
+<view class='content_text'>{{item[2]}}</view>
+<view class='content_text'>
+<view class='tmp'>{{item[1]}}℃</view>
+</view>
+</view>
+</block>
+</swiper-item>
+</swiper>
+
+    <view class='border'></view>
+  <block wx:for="{{forecasts}}" wx:key="unique">
+   
+    <view class="other_day">
+
+      <!-- index 判断 -->
+      <view class="day_title" >{{item[4]}}</view>
+       
+      <view class="classname">
+        <text>{{item[1]}}℃~{{item[3]}}℃</text>
+      </view>
+      <view class="yu" >
+        <image class="weather_icon" src="../../asset/images/icon/{{item[5]}}.png" mode="scaleToFill"></image>
+         <text class="weather_status">{{item[0]}}</text>
+      </view>
+    </view>
+
+  </block>
+</view>
+
+    <view class='border'></view>
+    <view class='lifestyle'>
+  <block wx:for="{{lifestyle}}" wx:key="unique">
+    <view class='lifestyle_item'>
+<view class='tpye'>
+<image class='lifestyle_icon' src="../../asset/images/lifestyle/{{item.type}}.png"></image>
+<text class='lifestyle_tex'>{{item.pype_text}}</text>
+</view>
+<view class='brf'>{{item.brf}}</view>
+</view>
+</block>
+</view>
+
+<view class='footer'>数据来源：和风天气</view>
+
+  </block>
+  </view>
+ 
