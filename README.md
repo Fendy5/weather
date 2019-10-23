@@ -8,11 +8,11 @@
 
 ## 截图
 
-<img src="https://www.fendy5.cn/images/weather.png">
+<img width="50%" src="https://www.fendy5.cn/images/weather.png">
 
 
 
-<img src="https://www.fendy5.cn/images/weather2.png">
+<img width="50%" src="https://www.fendy5.cn/images/weather2.png">
 
 
 
