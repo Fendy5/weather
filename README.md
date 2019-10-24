@@ -8,13 +8,9 @@
 
 ## 截图
 
-<img src="https://www.fendy5.cn/images/weather.png">
+<img width="50%" src="https://github.com/Fendy5/weather/raw/master/Example/weather.png">
 
 
 
-<img src="https://www.fendy5.cn/images/weather2.png">
-
-
-
-
+<img width="50%" src="https://github.com/Fendy5/weather/raw/master/Example/weather2.png">
 
